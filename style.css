@@ -1,0 +1,241 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  min-width: 420px;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.md-toolbar-tools .md-button {
+  margin-left: 5px;
+  margin-top: 4px;
+}
+
+.footer-container {
+  font-style: italic;
+  color: #333;
+  position: fixed;
+  pointer-events: none;
+  bottom: 0;
+  width: 100vw;
+  padding: 0 10px;
+}
+
+.upper-toolbar a {
+  color: white;
+}
+
+.fixed-toolbar {
+  min-height:24px;
+  background-color: rgba(32,42,92,.8);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  margin: 0;
+}
+
+.upper-toolbar .md-button {
+  min-width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.upper-toolbar .social-svg {
+  margin: auto;
+}
+
+.social-svg-background {
+  display: none;
+}
+
+.upper-toolbar .social-svg-icon {
+  fill: #FFFFFF;
+  width: 30px;
+  height: 30px;
+}
+
+.upper-toolbar a.md-button:not([disabled]):hover,
+.upper-toolbar .md-button:not([disabled]):hover {
+  color: #ff7e00;
+}
+
+.md-toolbar-tools {
+  background-color: rgba(32,42,92,1);
+  color: #FFF;
+  text-shadow: 0 2px 3px rgba(0,0,0,.27);
+  border-top: 10px solid white;
+  max-height: 75px;
+  height: 75px;
+}
+
+.content-container {
+  background: #FFF;
+  overflow-y: visible;
+  padding: 10px;
+}
+
+.footer-container {
+  background: rgba(255,255,255,.8);
+}
+
+.main-view {
+  padding: 20px 0;
+}
+
+.fullscreen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+}
+
+.landing-message {
+  margin-top: -100PX;
+  padding: 20px;
+  color: #FAFAFA;
+  display: inline-block;
+  opacity: 0;
+  animation: fadein ease-in 1s 1s;
+  animation-fill-mode: forwards;
+}
+
+.social-svg {
+  width: 36px;
+  height: 36px;
+}
+
+@keyframes fadein {
+  from { opacity: 0; visibility: hidden;}
+  to   { opacity: 1; visibility: visible;}
+}
+
+.landing-message ul {
+  list-style: none;
+}
+
+
+
+.parallax {
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  -webkit-perspective-origin: center;
+  perspective-origin: center;
+  overflow: auto;
+  overflow-x: hidden;
+  padding-top: 10vh;
+  height: 100vh;
+}
+
+.parallax .group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax .layer {
+  position: absolute;
+  width: 100%;
+  overflow: visible;
+  height: 100vh;
+}
+
+.parallax svg {
+}
+
+#city1 {
+  fill: #111115;
+  -webkit-transform: translateZ(.25px) scale(.75);
+  transform: translateZ(.25px) scale(.75);
+}
+
+#city2 {
+  fill: #12161e;
+  -webkit-transform: translateZ(0px) scale(1);
+  transform: translateZ(0px) scale(1);
+}
+
+#city3 {
+  fill: #19202f;
+  -webkit-transform: translateZ(-.25px) scale(1.25);
+  transform: translateZ(-.25px) scale(1.25);
+}
+
+#city4 {
+  fill: #222032;
+  -webkit-transform: translateZ(-.5px) scale(1.5);
+  transform: translateZ(-.5px) scale(1.5);
+}
+
+#city5 {
+  fill: #15172a;
+  -webkit-transform: translateZ(-.75px) scale(1.75);
+  transform: translateZ(-.75px) scale(1.75);
+}
+
+#mountain1 {
+  fill: #202a5c;
+  -webkit-transform: translateZ(-2.25px) scale(3.25);
+  transform: translateZ(-2.25px) scale(3.25);
+}
+
+#mountain2 {
+  fill: #4a4d82;
+  -webkit-transform: translateZ(-2.5px) scale(3.5);
+  transform: translateZ(-2.5px) scale(3.5);
+}
+
+#mountain3 {
+  fill: #5f5d99;
+  -webkit-transform: translateZ(-3px) scale(4);
+  transform: translateZ(-3px) scale(4);
+}
+
+#mountain4 {
+  fill: #8a7d9e;
+  -webkit-transform: translateZ(-3.5px) scale(4.5);
+  transform: translateZ(-3.5px) scale(4.5);
+}
+
+#sun {
+  stroke-width: 0;
+  fill: #ff7e00;
+  -webkit-transform: translateZ(-6px) scale(7);
+  transform: translateZ(-6px) scale(7);
+}
+.content-container .md-button.md-default-theme.md-fab {
+  background-color: #ff7e00;
+  color: #FFF;
+}
+
+.city2-front {
+  background: #12161e;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin-top: -6px;
+}
+
+.city-front {
+  position: relative;
+  margin-top: -6px;
+  background-color: #111115;
+  min-width: 100vw;
+  height: 100vh;
+}
+
