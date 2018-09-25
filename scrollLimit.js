@@ -8,19 +8,16 @@
       event.preventDefault();
       event.stopPropagation();
 
-      if (limitElement.getBoundingClientRect().top < 20) {
+      if (limitElement.getBoundingClientRect().top < 100) {
         var p = this;
 
         if (p.scroll)
-          p.scroll(0, p.scrollTop -40);
+          p.scroll(0, p.scrollTop/1.08);
         else {
-          p.scrollTop = p.scrollTop - 40;
+          p.scrollTop = p.scrollTop/1.08;
         }
         return false;
 
-      }
-      else {
-        // anything to do if scrolling back the other way?
       }
     };
   };
